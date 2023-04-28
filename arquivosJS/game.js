@@ -2,10 +2,10 @@
 
 let board = ['','','','','','','','',''];
 let playerTime = 0;
-let symbols = ['o','x'];
+let symbols = ['o', 'x'];
 
 function handleMove(position) {
-    if (board[position] == '') {
+    
         board[position] = symbols[playerTime];
 
         if (playerTime == 0) {
@@ -13,5 +13,5 @@ function handleMove(position) {
         } else {
             playerTime = 0;
         }
-    }
+    
 }
